@@ -517,7 +517,7 @@ fetch("https://pipe.jspsych.org/api/data/", {
               "title": "end_study_no_consent_use",
               "width": "l",
               "tardy": true,
-              "skip": "${this.state.consent_use!=!}"
+              "skip": "${this.state.consent_use!=1}"
             }
           ]
         }
