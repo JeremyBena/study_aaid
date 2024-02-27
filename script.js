@@ -143,67 +143,67 @@ const study = lab.util.fromObject({
               "templateParameters": [
                 {
                   "statements_aaid": "Être utilisée pour nous espionner.",
-                  "dimension": null
+                  "dimension": "neg"
                 },
                 {
                   "statements_aaid": "Être bénéfique lors des crises humanitaires.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Être piratée et retournée contre les personnes qu’elle est censée protéger.",
-                  "dimension": null
+                  "dimension": "neg"
                 },
                 {
                   "statements_aaid": "Être utilisée pour accélérer les prises de décisions critiques.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Être utilisée de manière non éthique par ceux qui détiennent le pouvoir.",
-                  "dimension": null
+                  "dimension": "neg"
                 },
                 {
                   "statements_aaid": "Constituer un développement technologique important.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Être utilisée pour maintenir la paix.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Faire des erreurs entraînant des dommages collatéraux.",
-                  "dimension": null
+                  "dimension": "neg"
                 },
                 {
                   "statements_aaid": "Mener à des conséquences imprévues.",
-                  "dimension": null
+                  "dimension": "neg"
                 },
                 {
                   "statements_aaid": "Être essentielle pour la sécurité nationale.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Être détournée par des organisations terroristes et utilisée contre la société.",
-                  "dimension": null
+                  "dimension": "neg"
                 },
                 {
                   "statements_aaid": "Sauver des vies.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Assurer la sécurité du personnel en première ligne en les préservant des dommages importants.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Protéger les infrastructures nationales importantes.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Identifier les menaces graves avant qu'elles n'émergent.",
-                  "dimension": null
+                  "dimension": "pos"
                 },
                 {
                   "statements_aaid": "Pour montrer que vous lisez attentivement les affirmations, cliquez sur \"Ni d'accord ni pas d'accord\"",
-                  "dimension": null
+                  "dimension": "attention_check"
                 }
               ],
               "indexParameter": "count_exposure_trial",
@@ -440,7 +440,7 @@ const study = lab.util.fromObject({
                   "required": true,
                   "type": "text",
                   "title": "\u003Ccenter\u003EFin de votre participation à l'étude\u003C\u002Fcenter\u003E",
-                  "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Envoyer\" pour envoyer vos réponses.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E \n\nAprès avoir cliqué sur \"Envoyer\", vous aurez la possibilité de télécharger les réponses que vous avez données, si vous le souhaitez (en cliquant sur \"Download data\". Vous pourrez ensuite fermer la page."
+                  "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Envoyer\" pour envoyer vos réponses.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E \n\u003Cbr\u003E\nAprès avoir cliqué sur \"Envoyer\", vous aurez la possibilité de télécharger les réponses que vous avez données, si vous le souhaitez (en cliquant sur \u003Ci\u003E\"Download data\"\u003C\u002Fi\u003E). Vous pourrez ensuite fermer la page."
                 },
                 {
                   "required": true,
