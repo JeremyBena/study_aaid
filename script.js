@@ -281,7 +281,7 @@ const study = lab.util.fromObject({
               "items": [
                 {
                   "type": "text",
-                  "content": "\u003Cp\u003EVous avez terminé de répondre au questionnaire.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Cp\u003EVous allez maintenant répondre à quelques questions sociodémographiques.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Cp\u003EAppuyez sur \"Continuer\" pour poursuivre.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Ccenter\u003E\u003Cbutton type=\"submit\"\u003EContinuer\u003C\u002Fbutton\u003E\u003C\u002Fcenter\u003E\n\n\u003C\u002FFONT\u003E\n\u003C\u002Fcenter\u003E",
+                  "content": "\u003Cp\u003EVous avez terminé de répondre au questionnaire.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Cp\u003EVous allez maintenant répondre à quelques questions socio-démographiques.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Cp\u003EAppuyez sur \"Continuer\" pour poursuivre.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Ccenter\u003E\u003Cbutton type=\"submit\"\u003EContinuer\u003C\u002Fbutton\u003E\u003C\u002Fcenter\u003E\n\n\u003C\u002FFONT\u003E\n\u003C\u002Fcenter\u003E",
                   "title": ""
                 }
               ],
@@ -417,7 +417,7 @@ const study = lab.util.fromObject({
                 {
                   "required": true,
                   "type": "html",
-                  "content": "\u003Cbr\u003E\r\n\u003Cform\u003E\r\n  \u003Cdiv style=\"text-align: center\" class=\"radio-toolbar\"\u003E\r\n  \u003Cinput type=\"radio\" id=\"no_use_data\" name=\"consent_use\" value=\"1\" onclick=\"document.getElementById('continue_button').style.visibility='visible';\" required\u003E\r\n  \u003Clabel for=\"no_use_data\"\u003EJe ne souhaite pas que les données anonymes que j'ai fournies soient utilisées pour analyses\u003C\u002Flabel\u003E\u003Cbr\u003E\u003Cbr\u003E\r\n  \u003Cinput type=\"radio\" id=\"use_data\" name=\"consent_use\" value=\"0\" onclick=\"document.getElementById('continue_button').style.visibility='visible';\"\u003E\r\n  \u003Clabel for=\"use_data\"\u003EJe confirme ma participation à cette recherche les données que j'ai fournies pourront être utilisées dans le cadre d'une étude scientifique\u003C\u002Flabel\u003E\u003Cbr\u003E\r\n\u003C\u002Fform\u003E\r\n  \u003C\u002Fdiv\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\" style=\"visibility:hidden;\"\u003E\u003Cbutton type=\"submit\" \u003EContinuer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E\u003C\u002Fform\u003E\r\n\u003C\u002Fdiv\u003E\u003C\u002Fmain\u003E",
+                  "content": "\u003Cbr\u003E\r\n\u003Cform\u003E\r\n  \u003Cdiv style=\"text-align: center\" class=\"radio-toolbar\"\u003E\r\n  \u003Cinput type=\"radio\" id=\"no_use_data\" name=\"consent_use\" value=\"0\" onclick=\"document.getElementById('continue_button').style.visibility='visible';\" required\u003E\r\n  \u003Clabel for=\"no_use_data\"\u003EJe ne souhaite pas que les données anonymes que j'ai fournies soient utilisées pour analyses\u003C\u002Flabel\u003E\u003Cbr\u003E\u003Cbr\u003E\r\n  \u003Cinput type=\"radio\" id=\"use_data\" name=\"consent_use\" value=\"1\" onclick=\"document.getElementById('continue_button').style.visibility='visible';\"\u003E\r\n  \u003Clabel for=\"use_data\"\u003EJe confirme ma participation à cette recherche les données que j'ai fournies pourront être utilisées dans le cadre d'une étude scientifique\u003C\u002Flabel\u003E\u003Cbr\u003E\r\n\u003C\u002Fform\u003E\r\n  \u003C\u002Fdiv\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\" style=\"visibility:hidden;\"\u003E\u003Cbutton type=\"submit\" \u003EContinuer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E\u003C\u002Fform\u003E\r\n\u003C\u002Fdiv\u003E\u003C\u002Fmain\u003E",
                   "name": ""
                 }
               ],
@@ -440,12 +440,12 @@ const study = lab.util.fromObject({
                   "required": true,
                   "type": "text",
                   "title": "\u003Ccenter\u003EFin de votre participation à l'étude\u003C\u002Fcenter\u003E",
-                  "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Envoyer\" pour envoyer vos réponses.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E"
+                  "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Envoyer\" pour envoyer vos réponses.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E \n\nAprès avoir cliqué sur \"Envoyer\", vous aurez la possibilité de télécharger les réponses que vous avez données, si vous le souhaitez (en cliquant sur \"Download data\". Vous pourrez ensuite fermer la page."
                 },
                 {
                   "required": true,
                   "type": "html",
-                  "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\" style=\"visibility:hidden;\"\u003E\u003Cbutton type=\"submit\" \u003EEnvoyer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
+                  "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\"\u003E\u003Cbutton type=\"submit\" \u003EEnvoyer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
                   "name": ""
                 }
               ],
@@ -453,9 +453,7 @@ const study = lab.util.fromObject({
               "submitButtonText": "Continue →",
               "submitButtonPosition": "hidden",
               "files": {},
-              "responses": {
-                "keypress(Space)": "End_Study"
-              },
+              "responses": {},
               "parameters": {},
               "messageHandlers": {
                 "before:prepare": function anonymous(
