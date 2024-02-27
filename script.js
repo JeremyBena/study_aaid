@@ -409,6 +409,33 @@ const study = lab.util.fromObject({
               "type": "lab.html.Page",
               "items": [
                 {
+                  "type": "text",
+                  "title": "Avez-vous déjà participé à cette étude ?",
+                  "content": ""
+                },
+                {
+                  "required": true,
+                  "type": "html",
+                  "content": "\u003Cbr\u003E\r\n\u003Cform\u003E\r\n  \u003Cdiv style=\"text-align: center\" class=\"radio-toolbar\"\u003E\r\n  \u003Cinput type=\"radio\" id=\"not_took_part\" name=\"took_part\" value=\"1\" onclick=\"document.getElementById('continue_button').style.visibility='visible';\" required\u003E\r\n  \u003Clabel for=\"serious\"\u003ENon, c'est la première fois que je participe à cette étude\u003C\u002Flabel\u003E\u003Cbr\u003E\u003Cbr\u003E\r\n  \u003Cinput type=\"radio\" id=\"yes_took_part\" name=\"took_part\" value=\"0\" onclick=\"document.getElementById('continue_button').style.visibility='visible';\"\u003E\r\n  \u003Clabel for=\"not_serious\"\u003EOui, j'ai déjà participé à cette étude\u003C\u002Flabel\u003E\u003Cbr\u003E\r\n\u003C\u002Fform\u003E\r\n  \u003C\u002Fdiv\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\" style=\"visibility:hidden;\"\u003E\u003Cbutton type=\"submit\" \u003EContinuer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E\u003C\u002Fform\u003E\r\n\u003C\u002Fdiv\u003E\u003C\u002Fmain\u003E",
+                  "name": ""
+                }
+              ],
+              "scrollTop": true,
+              "submitButtonText": "Continue →",
+              "submitButtonPosition": "hidden",
+              "files": {},
+              "responses": {
+                "": ""
+              },
+              "parameters": {},
+              "messageHandlers": {},
+              "title": "already_took_part",
+              "width": "l"
+            },
+            {
+              "type": "lab.html.Page",
+              "items": [
+                {
                   "required": true,
                   "type": "text",
                   "content": "Pour vous aider à prendre votre décision, voici un bref descriptif des objectifs de l'étude :\u003Cbr\u003E\u003Cbr\u003E\n\nCette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise. ",
