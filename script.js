@@ -206,7 +206,7 @@ const study = lab.util.fromObject({
                   "dimension": "attention_check"
                 }
               ],
-              "indexParameter": "count_exposure_trial",
+              "indexParameter": "count_aaid_trial",
               "shuffleGroups": [],
               "template": {
                 "type": "lab.flow.Sequence",
@@ -467,12 +467,40 @@ const study = lab.util.fromObject({
                   "required": true,
                   "type": "text",
                   "title": "\u003Ccenter\u003EFin de votre participation à l'étude\u003C\u002Fcenter\u003E",
+                  "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Terminer\" pour terminer votre participation sans que vos données soient utilisées, conformément à votre demande.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E \n\u003Cbr\u003E\nAprès avoir cliqué sur le bouton, vous aurez la possibilité de télécharger vos réponses si vous le souhaitez (en cliquant sur \u003Ci\u003E\"Download data\"\u003C\u002Fi\u003E). Vous pourrez ensuite fermer la page."
+                },
+                {
+                  "required": true,
+                  "type": "html",
+                  "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\"\u003E\u003Cbutton type=\"submit\"\u003ETerminer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
+                  "name": ""
+                }
+              ],
+              "scrollTop": true,
+              "submitButtonText": "Continue →",
+              "submitButtonPosition": "hidden",
+              "files": {},
+              "responses": {},
+              "parameters": {},
+              "messageHandlers": {},
+              "title": "end_study_no_consent_use",
+              "width": "l",
+              "tardy": true,
+              "skip": "${this.state.consent_use!=0}"
+            },
+            {
+              "type": "lab.html.Page",
+              "items": [
+                {
+                  "required": true,
+                  "type": "text",
+                  "title": "\u003Ccenter\u003EFin de votre participation à l'étude\u003C\u002Fcenter\u003E",
                   "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Envoyer\" pour envoyer vos réponses.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E \n\u003Cbr\u003E\nAprès avoir cliqué sur \"Envoyer\", vous aurez la possibilité de télécharger vos réponses si vous le souhaitez (en cliquant sur \u003Ci\u003E\"Download data\"\u003C\u002Fi\u003E). Vous pourrez ensuite fermer la page."
                 },
                 {
                   "required": true,
                   "type": "html",
-                  "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\"\u003E\u003Cbutton type=\"submit\" \u003EEnvoyer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
+                  "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\"\u003E\u003Cbutton type=\"submit\"\u003EEnvoyer\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
                   "name": ""
                 }
               ],
@@ -517,34 +545,6 @@ fetch("https://pipe.jspsych.org/api/data/", {
               "width": "l",
               "tardy": true,
               "skip": "${this.state.consent_use!=1}"
-            },
-            {
-              "type": "lab.html.Page",
-              "items": [
-                {
-                  "required": true,
-                  "type": "text",
-                  "title": "\u003Ccenter\u003EFin de votre participation à l'étude\u003C\u002Fcenter\u003E",
-                  "content": "\u003Cp align=\"justify\"\u003EL'étude est maintenant terminée. Merci beaucoup de votre participation !\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003ECette étude s'intéresse à vos attitudes et opinions concernant l'Intelligence Artificielle (IA) utilisée dans le domaine de la défense. Vos données nous serviront à valider, en langue française, un questionnaire qui existe pour l'instant seulement en langue anglaise.\u003C\u002Fp\u003E\n\n\u003Cp align=\"justify\"\u003EPour toute question, vous pouvez contacter par courriel le responsable scientifique de cette étude, Léo Facca : leo.facca@ecole-navale.fr\u003C\u002Fp\u003E\n\n\u003Ccenter\u003E\u003Cb\u003E\u003Cp\u003EAppuyez sur \"Terminer sans envoyer mes réponses\" pour terminer votre participation sans que vos données soient enregistrées, conformément à votre demande.\u003C\u002Fp\u003E\u003C\u002Fb\u003E\u003C\u002Fcenter\u003E \n\u003Cbr\u003E\nAprès avoir cliqué sur le bouton, vous aurez la possibilité de télécharger vos réponses si vous le souhaitez (en cliquant sur \u003Ci\u003E\"Download data\"\u003C\u002Fi\u003E). Vous pourrez ensuite fermer la page."
-                },
-                {
-                  "required": true,
-                  "type": "html",
-                  "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv id=\"continue_button\"\u003E\u003Cbutton type=\"submit\" \u003ETerminer sans envoyer mes réponses\u003C\u002Fbutton\u003E\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
-                  "name": ""
-                }
-              ],
-              "scrollTop": true,
-              "submitButtonText": "Continue →",
-              "submitButtonPosition": "hidden",
-              "files": {},
-              "responses": {},
-              "parameters": {},
-              "messageHandlers": {},
-              "title": "end_study_no_consent_use",
-              "width": "l",
-              "tardy": true,
-              "skip": "${this.state.consent_use!=0}"
             }
           ]
         }
