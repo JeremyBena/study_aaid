@@ -246,13 +246,13 @@ const study = lab.util.fromObject({
                     "items": [
                       {
                         "type": "text",
-                        "content": "\u003Cp\u003ELes déclarations suivantes se concentrent sur l'utilisation de l'IA dans un contexte de Défense Nationale.\u003C\u002Fp\u003E\n\u003Cp\u003ECe sont des affirmations générales qui pourraient se rapporter à l'utilisation de l'IA à des fins de défense et ne sont pas directement basées sur une application particulière ou un type d'IA.\u003C\u002Fp\u003E\n\u003Cp\u003EPour chacune des déclarations, veuillez cocher l'option qui représente le mieux ce que vous pensez. Il n’y a pas de bonne ni de mauvaise réponse.\u003C\u002Fp\u003E\u003Cbr\u003E\n\n\u003Ccenter\u003E\n\u003Cp\u003EL'utilisation de l'IA dans la défense pourrait...\u003C\u002Fp\u003E\n\u003Cbr\u003E\n\n \u003Cb\u003E&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\u003C\u002Fb\u003E\n\n\u003C\u002Fcenter\u003E\n\n\u003Cbr\u003E",
+                        "content": "",
                         "title": ""
                       },
                       {
                         "required": true,
                         "type": "html",
-                        "content": "\u003Cbr\u003E\r\n\r\n\u003Ccenter\u003E\r\n  \u003Cdiv class=\"radio-toolbar-int\"\u003E\r\n  \u003Cinput type=\"radio\" id=\"pas_du_tout_daccord\" name=\"ITI\" value=\"0\"\u003E\r\n  \u003Clabel for=\"pas_du_tout_daccord\"\u003EPas du tout d'accord\u003C\u002Flabel\u003E\r\n  \u003Cinput type=\"radio\" id=\"pas_daccord\" name=\"ITI\" value=\"0\"\u003E\r\n  \u003Clabel for=\"pas_daccord\"\u003EPas d'accord\u003C\u002Flabel\u003E\r\n  \u003Cinput type=\"radio\" id=\"ni_daccord_ni_pas_daccord\" name=\"ITI\" value=\"0\"\u003E\r\n  \u003Clabel for=\"ni_daccord_ni_pas_daccord\"\u003ENi d'accord ni pas d'accord\u003C\u002Flabel\u003E\r\n  \u003Cinput type=\"radio\" id=\"daccord\" name=\"ITI\" value=\"0\" \u003E\r\n  \u003Clabel for=\"daccord\"\u003ED'accord\u003C\u002Flabel\u003E\r\n  \u003Cinput type=\"radio\" id=\"tout_a_fait_daccord\" name=\"ITI\" value=\"0\" \u003E\r\n  \u003Clabel for=\"tout_a_fait_daccord\"\u003ETout à fait d'accord\u003C\u002Flabel\u003E\r\n\u003C\u002Fdiv\u003E\r\n\u003C\u002Fcenter\u003E",
+                        "content": "",
                         "name": ""
                       }
                     ],

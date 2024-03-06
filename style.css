@@ -56,7 +56,16 @@ fieldset span
 {display:inline-block; 
 text-align: center;}
 fieldset span input { display: none;}
+
 .w-m {
+  max-width: calc(3 * var(--width-min-container));
+}
+
+.w-s {
+  max-width: calc(3 * var(--width-min-container));
+}
+
+.w-l {
   max-width: calc(3 * var(--width-min-container));
 }
 
