@@ -1,2 +1,1 @@
-# test_study_aaid
-TEST repository only
+lab.js study on the validation of the aaid scale.
